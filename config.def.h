@@ -21,7 +21,7 @@ static const char col_bgsel[]       = "#f5e0dc";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { text, base, overlay0 },
-	[SchemeSel]  = { base, blue, pink },
+	[SchemeSel]  = { base, blue, lavender },
 };
 
 /* tagging */
@@ -105,8 +105,8 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
-	{ MODKEY 												XK_equal,  spawn,          {.v = volupcmd } },
-	{ MODKEY												XK_minus,  spawn,          {.v = voldowncmd } },
+	{ MODKEY, 											XK_equal,  spawn,          {.v = volupcmd } },
+	{ MODKEY,												XK_minus,  spawn,          {.v = voldowncmd } },
 	{ MODKEY|ShiftMask,							XK_m,      spawn,          {.v = volmutecmd } },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
